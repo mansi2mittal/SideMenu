@@ -201,6 +201,96 @@
             </objects>
             <point key="canvasLocation" x="2191" y="93"/>
         </scene>
+        <!--Green View Controller-->
+        <scene sceneID="1sL-Wx-RV4">
+            <objects>
+                <viewController storyboardIdentifier="GreenViewControllerID" id="kv1-9i-JL0" customClass="GreenViewController" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zx-gB-Es1"/>
+                        <viewControllerLayoutGuide type="bottom" id="OCW-p0-chT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jv0-cN-9ak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20326026850000001" green="0.89381741749999999" blue="0.33162713199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swi-NH-xSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848" y="132"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="sZC-Sv-yxt">
+            <objects>
+                <viewController storyboardIdentifier="BlueViewControllerID" id="3vL-sZ-QW6" customClass="BlueViewController" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WDl-Ci-Bux"/>
+                        <viewControllerLayoutGuide type="bottom" id="aLK-u7-9XJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EGq-Xq-C2f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.38216951630000001" green="0.84968323999999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4K-6p-es1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512" y="128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4jM-9Q-sgG">
+            <objects>
+                <viewController id="ZNC-td-meI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fp6-Se-12C"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJ4-E4-GLv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sxP-jO-J5c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.79187291479999999" blue="0.4228276319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkA-QI-K7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4241" y="127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MWk-J8-r2G">
+            <objects>
+                <viewController id="P29-E6-oXt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EJa-fF-xH9"/>
+                        <viewControllerLayoutGuide type="bottom" id="7mE-Lr-ECL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ala-m4-DPk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.19456745766317174" blue="0.12749783628501554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vR-cc-jIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4930" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uvp-Vm-VdD">
+            <objects>
+                <viewController id="GCm-50-3Fm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pNJ-Ib-nNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="5mz-Aq-cHR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h2y-ma-3B6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.84328369140000004" green="0.46722078290000002" blue="0.89381741749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTd-kG-VSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5606" y="132"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="45" height="45"/>

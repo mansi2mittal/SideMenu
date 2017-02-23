@@ -56,9 +56,14 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 1
+        if indexPath.row == 0
         {
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "BlueViewControllerID") as! BlueViewController
             
+            UIView.animate(withDuration: 0.1 , delay: 0.0, options: .curveEaseInOut, animations:
+                {  self.navigationController?.pushViewController(newViewController, animated: true)
+            }, completion:nil )
+
         }
         
     }

@@ -14,6 +14,8 @@
 		0C48A8C91E5EF328007C9CDE /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */; };
 		0C48A8CB1E5EFBDE007C9CDE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */; };
 		0C48A8CD1E5EFDE8007C9CDE /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */; };
+		0C48A8CF1E5F2D6C007C9CDE /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8CE1E5F2D6C007C9CDE /* GreenViewController.swift */; };
+		0C48A8D11E5F2D95007C9CDE /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8D01E5F2D95007C9CDE /* BlueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		0C48A8CE1E5F2D6C007C9CDE /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		0C48A8D01E5F2D95007C9CDE /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				0C48A8B61E5EEEDC007C9CDE /* AppDelegate.swift */,
 				0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */,
 				0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */,
+				0C48A8CE1E5F2D6C007C9CDE /* GreenViewController.swift */,
+				0C48A8D01E5F2D95007C9CDE /* BlueViewController.swift */,
 				0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */,
 				0C48A8BA1E5EEEDC007C9CDE /* Main.storyboard */,
 				0C48A8BD1E5EEEDC007C9CDE /* Assets.xcassets */,
@@ -146,6 +152,8 @@
 				0C48A8C91E5EF328007C9CDE /* LeftSideMenuViewController.swift in Sources */,
 				0C48A8B71E5EEEDC007C9CDE /* AppDelegate.swift in Sources */,
 				0C48A8CD1E5EFDE8007C9CDE /* ChildViewController.swift in Sources */,
+				0C48A8D11E5F2D95007C9CDE /* BlueViewController.swift in Sources */,
+				0C48A8CF1E5F2D6C007C9CDE /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
