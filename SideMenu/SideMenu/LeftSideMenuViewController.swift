@@ -10,7 +10,7 @@ import UIKit
 
 class LeftSideMenuViewController: UIViewController {
     
-    // ARRAY TO STORE THE LABEL NAMES THAT HAS TO BE DISPLAYED INSIDE THE SIDE MENU
+   // ARRAY TO STORE THE LABEL NAMES THAT HAS TO BE DISPLAYED INSIDE THE SIDE MENU
     
    let  arrayOfLabels = [" Red" , "Green" , "Blue" , " Yellow" ," Pink"]
     
@@ -38,10 +38,13 @@ class LeftSideMenuViewController: UIViewController {
 
 extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSource
 {
+    // FUNCTION RETURNING THE NUMBER OF ROWS IN TABLEVIEW
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 5
     }
+    // FUNCTION TO RETURN THE CELL AT A PARTICULAR INDEXPATH 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -54,17 +57,34 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
         return cell
     }
     
+     // FUNCTION DOING THE OPERATIONS ON THE SELECTED CELL
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 0
-        {
-            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "BlueViewControllerID") as! BlueViewController
+        switch indexPath.row{
             
-            UIView.animate(withDuration: 0.1 , delay: 0.0, options: .curveEaseInOut, animations:
-                {  self.navigationController?.pushViewController(newViewController, animated: true)
-            }, completion:nil )
+        case 0:
+            
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChildViewControllerID") as? ChildViewController
+            
+            let superiorview = self.superiorview as! ChildViewController
+            superiorview.swapChild( child: newViewController)
+            
+        case 1:
+            
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewControllerID") as? GreenViewController
+            
+            let superiorview = self.superiorview as! GreenViewController
+            superiorview.swapChild( child: newViewController)
+            
+        default: print( " something is Wrong")
+
 
         }
+        
+    }
+    
+    func swapChild( child : UIViewController){
         
     }
 }
