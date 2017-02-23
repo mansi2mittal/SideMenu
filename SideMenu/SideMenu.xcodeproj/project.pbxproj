@@ -12,6 +12,8 @@
 		0C48A8BE1E5EEEDC007C9CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C48A8BD1E5EEEDC007C9CDE /* Assets.xcassets */; };
 		0C48A8C11E5EEEDC007C9CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C48A8BF1E5EEEDC007C9CDE /* LaunchScreen.storyboard */; };
 		0C48A8C91E5EF328007C9CDE /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */; };
+		0C48A8CB1E5EFBDE007C9CDE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */; };
+		0C48A8CD1E5EFDE8007C9CDE /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0C48A8C01E5EEEDC007C9CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C48A8C21E5EEEDD007C9CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				0C48A8B61E5EEEDC007C9CDE /* AppDelegate.swift */,
 				0C48A8C81E5EF328007C9CDE /* LeftSideMenuViewController.swift */,
+				0C48A8CC1E5EFDE8007C9CDE /* ChildViewController.swift */,
+				0C48A8CA1E5EFBDE007C9CDE /* MainViewController.swift */,
 				0C48A8BA1E5EEEDC007C9CDE /* Main.storyboard */,
 				0C48A8BD1E5EEEDC007C9CDE /* Assets.xcassets */,
 				0C48A8BF1E5EEEDC007C9CDE /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C48A8CB1E5EFBDE007C9CDE /* MainViewController.swift in Sources */,
 				0C48A8C91E5EF328007C9CDE /* LeftSideMenuViewController.swift in Sources */,
 				0C48A8B71E5EEEDC007C9CDE /* AppDelegate.swift in Sources */,
+				0C48A8CD1E5EFDE8007C9CDE /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				0C48A8C71E5EEEDD007C9CDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

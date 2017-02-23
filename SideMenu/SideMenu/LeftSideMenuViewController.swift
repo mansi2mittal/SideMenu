@@ -10,17 +10,21 @@ import UIKit
 
 class LeftSideMenuViewController: UIViewController {
     
-    @IBOutlet weak var LeftSideTableView: UITableView!
+    // ARRAY TO STORE THE LABEL NAMES THAT HAS TO BE DISPLAYED INSIDE THE SIDE MENU
     
+   let  arrayOfLabels = [" Red" , "Green" , "Blue" , " Yellow" ," Pink"]
     
+    //OUTLETS
+    
+    @IBOutlet weak var leftSideTableView: UITableView!
+    
+    // VIEW LIFECYCLE
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LeftSideTableView.delegate = self
-        LeftSideTableView.dataSource = self
-
-        // Do any additional setup after loading the view.
+        leftSideTableView.delegate = self
+        leftSideTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +34,7 @@ class LeftSideMenuViewController: UIViewController {
     
 
 }
+// MARK: EXTENSION OF THE MAIN VC FOR TABLE VIEW DELEGATES AND DATASOURCES
 
 extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSource
 {
@@ -40,12 +45,26 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LeftMenuCellID") as! LeftMenuCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LeftMenuCellID") as? LeftMenuCell else{
+            fatalError("Error Not Found")
+        }
+        
+        cell.labelInCell.text = arrayOfLabels[indexPath.row]
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 1
+        {
+            
+        }
+        
+    }
 }
+
+// CELL IN THE TABLE VIEW CELL
 
 class LeftMenuCell : UITableViewCell
 {
