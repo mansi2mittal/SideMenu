@@ -92,7 +92,7 @@ class MainViewController: UIViewController {
             
          UIView.animate( withDuration: 0.05, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .allowAnimatedContent, animations: ({
             
-        self.slide.view.frame = CGRect(x : -420 , y: 90,  width: 200 ,height: 667 )
+        self.slide.view.frame = CGRect(x : -200 , y: 90,  width: 200 ,height: 667 )
     
         }), completion: nil)
         }
@@ -120,7 +120,7 @@ class MainViewController: UIViewController {
             
             UIView.animate( withDuration: 0.05, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .allowAnimatedContent, animations: ({
                 
-                self.slide.view.frame = CGRect(x : 600 , y: 90,  width: 200 ,height: 667 )
+                self.slide.view.frame = CGRect(x : 420 , y: 90,  width: 200 ,height: 667 )
                 
             }), completion: nil)
             

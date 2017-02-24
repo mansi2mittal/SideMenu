@@ -44,7 +44,7 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return arrayOfLabels.count
     }
     // FUNCTION TO RETURN THE CELL AT A PARTICULAR INDEXPATH 
     
@@ -67,7 +67,8 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
             
         case 0:
             
-            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "RedViewControllerID") as? RedViewController
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier:
+                "RedViewControllerID") as? RedViewController
             
             let parent = self.parent as! MainViewController
             parent.swapChild( child: newViewController!)
@@ -100,9 +101,7 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
             let parent = self.parent as! MainViewController
             parent.swapChild( child: newViewController!)
 
-
-            
-        default: print( " something is Wrong")
+       default: print( "NO SUCH ITEM FOUND")
 
 
         }
