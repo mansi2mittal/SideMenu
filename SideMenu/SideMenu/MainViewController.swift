@@ -62,7 +62,7 @@ class MainViewController: UIViewController {
     {
         self.addChildViewController(storePage)
         
-        storePage.view.frame = CGRect( x: 0 ,y: 60 , width: Int(self.view.frame.width), height: Int(self.view.frame.height - 60))
+        storePage.view.frame = CGRect( x: 0 ,y: 70 , width: Int(self.view.frame.width), height: Int(self.view.frame.height - 70))
         
         storePage.didMove(toParentViewController: self)
         
@@ -74,7 +74,7 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(slide.view)
         
-        slide.view.frame = CGRect(x : -200 , y: 60 , width: 200 , height: 667)
+        slide.view.frame = CGRect(x : -200 , y: 70 , width: 200 , height: 667)
         
         slide.didMove(toParentViewController: self)
         
@@ -132,7 +132,7 @@ class MainViewController: UIViewController {
             
             UIView.animate( withDuration: 0.05, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .allowAnimatedContent, animations: ({
                 
-                self.slide?.view.frame = CGRect(x : 250 , y: 120,  width: 150 ,height: 667 )
+                self.slide?.view.frame = CGRect(x : 260 , y: 120,  width: 150 ,height: 667 )
                 
             }), completion: nil)
             
