@@ -23,19 +23,18 @@ class LeftSideMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // ASSIGNING THE DELEGATE AND DATASOURCE TO SELF
+        
         self.leftSideTableView.delegate = self
         self.leftSideTableView.dataSource = self
         
-        
-    }
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-       
-
 }
 // MARK: EXTENSION OF THE MAIN VC FOR TABLE VIEW DELEGATES AND DATASOURCES
 
@@ -79,6 +78,29 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
             
             let parent = self.parent as! MainViewController
             parent.swapChild( child: newViewController!)
+            
+        case 2:
+            
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "BlueViewControllerID") as? BlueViewController
+            
+            let parent = self.parent as! MainViewController
+            parent.swapChild( child: newViewController!)
+            
+        case 3:
+            
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "YellowViewControllerID") as? YellowViewController
+            
+            let parent = self.parent as! MainViewController
+            parent.swapChild( child: newViewController!)
+            
+        case 4:
+            
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "PinkViewControllerID") as? PinkViewController
+            
+            let parent = self.parent as! MainViewController
+            parent.swapChild( child: newViewController!)
+
+
             
         default: print( " something is Wrong")
 
