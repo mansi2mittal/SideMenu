@@ -19,38 +19,52 @@ class MainViewController: UIViewController {
     @IBOutlet weak var rightSideButton: UIButton!
     
     var slide : UIViewController!
-
+    
+    var storePage = UIViewController()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        slide = self.storyboard?.instantiateViewController(withIdentifier: "LeftSideMenuViewControllerID") as! LeftSideMenuViewController
+        
+        storePage = self.storyboard?.instantiateViewController(withIdentifier: "ChildViewControllerID")as!  ChildViewController
+
         sideButton.addTarget(self, action: #selector(leftButtonTapped), for: .touchUpInside)
         
         rightSideButton.addTarget(self, action: #selector(rightButtonTapped), for: .touchUpInside)
         
-        let leftViewController = self.storyboard?.instantiateViewController(withIdentifier: "LeftSideMenuViewControllerID")
-        
-        slide = leftViewController
-        
-        self.addChildViewController(slide!)
-        
-        self.view.addSubview((slide?.view)!)
-        
-        slide?.view.frame = CGRect(x : -220 , y: 200,  width: 200 ,height: 667 )
-        
-       let childViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChildViewControllerID")
-        
-        self.addChildViewController(childViewController!)
-        
-        self.containerView.addSubview((childViewController?.view)!)
-        
-    }
+      }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // FUNCTION TO DISPLAY THE LEFT SIDE MENU ON THE CLICK OF THE LEFT BUTTON 
+    
+    override func viewWillLayoutSubviews()
+    {
+        self.addChildViewController(storePage)
+        
+        storePage.view.frame = CGRect( x: 0 ,y: 64 , width: Int(self.view.frame.width), height: Int(self.view.frame.height - 60))
+        
+        storePage.didMove(toParentViewController: self)
+        
+        self.view.addSubview(storePage.view)
+
+        self.sideButton.isSelected = false
+        
+        self.addChildViewController(slide)
+        
+        self.view.addSubview(slide.view)
+        
+        slide.view.frame = CGRect(x : -200 , y: 64 , width: 200 , height: 667)
+        
+        slide.didMove(toParentViewController: self)
+        
+        print(self.childViewControllers.count)
+    }
+
+    // FUNCTION TO DISPLAY THE LEFT SIDE MENU ON THE CLICK OF THE LEFT BUTTON
     
     func leftButtonTapped( sender : UIButton)
     {
@@ -107,6 +121,13 @@ class MainViewController: UIViewController {
             
         }
 
+    }
+    
+    func swapChild( child : UIViewController){
+        
+        storePage.removeFromParentViewController()
+        storePage = child
+        viewWillLayoutSubviews()
     }
     
 

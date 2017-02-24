@@ -14,7 +14,7 @@ class LeftSideMenuViewController: UIViewController {
     
    let  arrayOfLabels = [" Red" , "Green" , "Blue" , " Yellow" ," Pink"]
     
-    //OUTLETS
+   //OUTLETS
     
     @IBOutlet weak var leftSideTableView: UITableView!
     
@@ -23,8 +23,10 @@ class LeftSideMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        leftSideTableView.delegate = self
-        leftSideTableView.dataSource = self
+        self.leftSideTableView.delegate = self
+        self.leftSideTableView.dataSource = self
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,7 @@ class LeftSideMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+       
 
 }
 // MARK: EXTENSION OF THE MAIN VC FOR TABLE VIEW DELEGATES AND DATASOURCES
@@ -65,17 +68,17 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
             
         case 0:
             
-            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChildViewControllerID") as? ChildViewController
+            let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "RedViewControllerID") as? RedViewController
             
-            let superiorview = self.superiorview as! ChildViewController
-            superiorview.swapChild( child: newViewController)
+            let parent = self.parent as! MainViewController
+            parent.swapChild( child: newViewController!)
             
         case 1:
             
             let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewControllerID") as? GreenViewController
             
-            let superiorview = self.superiorview as! GreenViewController
-            superiorview.swapChild( child: newViewController)
+            let parent = self.parent as! MainViewController
+            parent.swapChild( child: newViewController!)
             
         default: print( " something is Wrong")
 
@@ -84,9 +87,6 @@ extension LeftSideMenuViewController : UITableViewDelegate , UITableViewDataSour
         
     }
     
-    func swapChild( child : UIViewController){
-        
-    }
 }
 
 // CELL IN THE TABLE VIEW CELL
